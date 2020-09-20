@@ -1,0 +1,18 @@
+public class problem1 {
+
+/**
+ * @param args the command line arguments
+ */
+public static void main(String[] args) {
+     int P1=70,P2=20,P3=10;
+    float tax_percent=18;
+    float tax_amt,tax_amtP1,tax_amtP2,tax_amtP3;
+    float final_amt;
+    tax_amtP1 = (float) (tax_percent/100*P1);
+     tax_amtP2 = (float) (tax_percent/100*P2);
+        tax_amtP3 = (float) (tax_percent/100*P3);
+          tax_amt=tax_amtP1+tax_amtP2+tax_amtP3;
+    final_amt=P1+P2+P3+tax_amt;
+    System.out.println(final_amt);
+}
+}
