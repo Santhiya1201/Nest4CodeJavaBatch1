@@ -16,3 +16,32 @@ public static void main(String[] args) {
     System.out.println(final_amt);
 }
 }
+Problem 2 :
+
+public class Problem2 {
+/**
+* @param args the command line arguments
+*/
+public static void main(String[] args) {
+
+  int heightfeetpart= 5;
+   int heightInchpart= 11;
+    int weightinkg=60;
+    float result1,result2;
+  result1 = heightConvertor (heightfeetpart,heightInchpart);
+ result2= WeightConvertor (weightinkg);
+     System.out.println("Height in cm" +result1);
+     System.out.println("weight in pounds" +result2);
+   }
+  static float heightConvertor( int heightfeetpart, int heightInchpart)
+  {
+   double finalheight = heightfeetpart*12*2.54 + heightInchpart*2.54;
+    return (float) finalheight;
+}
+static float WeightConvertor(int weight)
+{
+float finalweight= (float) ((float)weight*2.2);
+return finalweight;
+}
+}
+
